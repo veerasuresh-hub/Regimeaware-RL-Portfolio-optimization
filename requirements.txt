@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+gymnasium
+stable-baselines3
+hmmlearn
+shap
+streamlit
+plotly
+streamlit-autorefresh
