@@ -1,0 +1,7 @@
+Experiment,Comparison,Metric,Before,After,Interpretation
+Risk penalty effect,Baseline RL → Risk-Aware RL,MaxDD,-0.22027655924974288,-0.2092205989826287,Improved drawdown
+Risk penalty tail-risk effect,Baseline RL → Risk-Aware RL,CVaR_5pct,-0.2041137977396621,-0.1660890986518389,Improved tail risk
+Regime information effect,Baseline RL → Regime-Aware RL,MaxDD,-0.22027655924974288,-0.13461322496724157,Improved drawdown
+Combined final model effect,Baseline RL → Final RL,Sharpe,0.4914527615131059,0.7235879425533275,Improved Sharpe
+Combined final downside-risk effect,Baseline RL → Final RL,MaxDD,-0.22027655924974288,-0.17277956281407286,Improved drawdown
+Combined final tail-risk effect,Baseline RL → Final RL,CVaR_5pct,-0.2041137977396621,-0.10625207126604988,Improved tail risk

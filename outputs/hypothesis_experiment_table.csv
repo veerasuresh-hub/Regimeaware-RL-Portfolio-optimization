@@ -1,0 +1,6 @@
+Hypothesis,Statement,Evidence,Pass/Fail
+H1,Final regime-aware risk-aware RL improves risk-adjusted performance and downside-risk control relative to baseline RL.,"Sharpe Final=0.7236, Baseline=0.4915; MaxDD Final=-0.1728, Baseline=-0.2203; CVaR Final=-0.1063, Baseline=-0.2041",PASS
+H2,Risk-aware reward shaping improves downside-risk control compared with baseline RL.,"MaxDD Risk-aware=-0.2092, Baseline=-0.2203; CVaR Risk-aware=-0.1661, Baseline=-0.2041",PASS
+H3,Adding regime information changes RL performance and allocation behaviour.,"Sharpe Regime-aware=0.7032, Baseline=0.4915; MaxDD Regime-aware=-0.1346, Baseline=-0.2203",PASS
+H4,SHAP can identify interpretable features influencing the final policy cash allocation.,SHAP feature-importance table and plots are generated for the final RL model.,PASS
+Benchmark Note,Traditional portfolio baselines remain competitive and are evaluated separately from the RL ablation hypotheses.,"Equal Weight Sharpe=0.7013; Final RL Sharpe=0.7236. This does not invalidate the RL ablation result, but shows traditional baselines remain strong.",REFERENCE

@@ -1,0 +1,8 @@
+Comparison,N,Mean Difference,Wilcoxon p-value,Paired t-test p-value,Interpretation
+Final RL vs Baseline RL,28,-0.023967038944160576,0.3160962611436844,0.31967722287894884,Not statistically significant at 5% level
+Final RL vs Equal Weight,28,0.01164520350920876,0.4514767527580261,0.30148621994356434,Not statistically significant at 5% level
+Final RL vs Markowitz,28,0.01823547781609452,0.2015676274895668,0.1731233307169146,Not statistically significant at 5% level
+Final RL vs Risk Parity,28,0.028759287717797306,0.01362369954586029,0.04376719325428485,Statistically significant at 5% level
+Risk-Aware RL vs Baseline RL,28,-0.04260265699010831,0.09456419944763184,0.042547685209246205,Not statistically significant at 5% level
+Regime-Aware RL vs Baseline RL,28,-0.029259084510756178,0.3160962611436844,0.19180882034508767,Not statistically significant at 5% level
+Final RL vs HRP,28,0.035857807985123225,0.0051764026284217834,0.020709380242166717,Statistically significant at 5% level
