@@ -1,42 +1,40 @@
 # Regimeaware-RL-Portfolio-optimization
-Regime-aware reinforcement learning framework for multi-asset portfolio optimization using PPO, Hidden Markov Models, risk-aware reward shaping, and explainable AI.
+
+Regime-aware reinforcement learning framework for multi-asset portfolio optimisation using PPO, Hidden Markov Models, risk-aware reward shaping, and explainable AI.
+
 ## Overview
 
-This project implements a regime-aware reinforcement learning framework for portfolio optimisation using:
+This project implements a regime-aware reinforcement learning framework for portfolio optimisation. The framework combines:
 
-- Hidden Markov Models (HMM)
-- PPO Reinforcement Learning
-- Risk-aware reward shaping
-- SHAP explainability
-- Streamlit decision intelligence dashboard
+* Hidden Markov Models (HMM)
+* PPO reinforcement learning
+* Risk-aware reward shaping
+* Portfolio backtesting
+* Stress-period evaluation
+* SHAP explainability
+* Streamlit dashboard visualisation
 
-The framework models changing market regimes such as:
-
-- Bull markets
-- Bear markets
-- Crisis periods
-
-and dynamically adjusts portfolio allocations.
+The system identifies changing market conditions such as Bull, Bear, and Crisis regimes, and dynamically adjusts portfolio allocation decisions based on evolving market behaviour.
 
 ---
 
 # Features
 
-- Regime detection using Gaussian HMM
-- PPO reinforcement learning agent
-- Risk-aware reward engineering
-- Portfolio backtesting
-- Stress-period evaluation
-- SHAP explainability analysis
-- Interactive Streamlit dashboard
-- Animated portfolio simulation
+* Regime detection using Gaussian HMM
+* PPO reinforcement learning agent
+* Risk-aware reward engineering
+* Portfolio backtesting
+* Stress-period evaluation
+* SHAP explainability analysis
+* Interactive Streamlit dashboard
+* Animated portfolio simulation
 
 ---
 
 # Project Structure
 
 ```text
-project/
+Regimeaware-RL-Portfolio-optimization/
 │
 ├── main.py
 ├── requirements.txt
@@ -46,8 +44,15 @@ project/
 ├── dashboard/
 │   └── streamlit_animated_simulator.py
 │
-├── outputs/
 ├── data/
+│   └── cleaned_real_asset_returns.csv
+│
+├── outputs/
+│   ├── final_dashboard_decision_table.csv
+│   ├── strategy_results.csv
+│   ├── shap_feature_importance.csv
+│   └── other generated outputs
+│
 └── src/
 ```
 
@@ -58,8 +63,13 @@ project/
 ## Clone Repository
 
 ```bash
-git clone <your-repo-url>
-cd <repo-name>
+git clone https://github.com/veerasuresh-hub/Regimeaware-RL-Portfolio-optimization.git
+```
+
+## Move Into Project Folder
+
+```bash
+cd Regimeaware-RL-Portfolio-optimization
 ```
 
 ## Install Dependencies
@@ -72,19 +82,26 @@ pip install -r requirements.txt
 
 # Running the Main Pipeline
 
+Run the full research pipeline using:
+
 ```bash
 python main.py
 ```
 
-This generates:
+The pipeline performs:
 
-- Backtest results
-- Portfolio metrics
-- SHAP explainability outputs
-- Dashboard CSV files
-- Visualisations
+* Data loading and preprocessing
+* Feature engineering
+* HMM regime detection
+* PPO reinforcement learning training
+* Reinforcement learning backtesting
+* Baseline strategy comparison
+* Stress testing
+* Hypothesis testing
+* SHAP explainability analysis
+* Dashboard export generation
 
-Outputs are saved inside:
+Generated outputs are automatically stored inside:
 
 ```text
 outputs/
@@ -92,54 +109,86 @@ outputs/
 
 ---
 
-# Running the Dashboard
+# Running the Streamlit Dashboard
+
+The dashboard reads the exported file:
+
+```text
+outputs/final_dashboard_decision_table.csv
+```
+
+Launch the dashboard using:
 
 ```bash
 streamlit run dashboard/streamlit_animated_simulator.py
+```
+
+After execution, Streamlit opens the dashboard in the browser using:
+
+```text
+http://localhost:8501
 ```
 
 ---
 
 # Dashboard Features
 
-- Portfolio growth animation
-- Regime probability tracking
-- Drawdown analysis
-- Asset allocation visualisation
-- Decision intelligence explanations
-- Interactive simulation controls
+* Portfolio growth animation
+* Regime probability tracking
+* Drawdown analysis
+* Asset allocation visualisation
+* Decision intelligence explanations
+* Interactive simulation controls
+
+---
+
+# Dataset
+
+Dataset used in this project:
+
+```text
+data/cleaned_real_asset_returns.csv
+```
+
+---
+
+# Outputs
+
+The outputs folder contains:
+
+* Portfolio performance metrics
+* Reinforcement learning backtesting results
+* Regime probability outputs
+* Stress testing outputs
+* SHAP explainability outputs
+* Ablation study results
+* Dashboard decision tables
+* Visualisation files
 
 ---
 
 # Technologies Used
 
-- Python
-- Streamlit
-- Plotly
-- Stable-Baselines3
-- Gymnasium
-- HMMlearn
-- SHAP
-- Pandas
-- NumPy
-- Scikit-learn
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* HMMlearn
+* Stable-Baselines3
+* Gymnasium
+* SHAP
+* Plotly
+* Streamlit
 
 ---
 
 # Research Contribution
 
-This framework investigates whether regime-aware reinforcement learning can improve:
-
-- Risk-adjusted returns
-- Downside-risk control
-- Portfolio adaptability during market stress
-
-compared with traditional portfolio strategies.
+This project investigates whether combining regime detection, risk-aware reward shaping, and reinforcement learning can improve adaptive portfolio allocation and downside-risk control under changing market conditions.
 
 ---
 
 # Author
 
 Suresh A
-
 MSc Data Science
