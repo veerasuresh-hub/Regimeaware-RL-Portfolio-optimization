@@ -190,5 +190,5 @@ This project investigates whether combining regime detection, risk-aware reward 
 
 # Author
 
-Suresh A
+Veera Suresh A
 MSc Data Science
