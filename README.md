@@ -1,4 +1,4 @@
-# Regimeaware-RL-Portfolio-optimization
+# Regime-Aware Deep Reinforcement Learning for Interpretable Multi-Asset Portfolio Optimization
 
 Regime-aware reinforcement learning framework for multi-asset portfolio optimisation using PPO, Hidden Markov Models, risk-aware reward shaping, and explainable AI.
 
