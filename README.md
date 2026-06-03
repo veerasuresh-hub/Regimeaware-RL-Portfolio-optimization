@@ -2,6 +2,8 @@
 
 Regime-aware reinforcement learning framework for multi-asset portfolio optimisation using PPO, Hidden Markov Models, risk-aware reward shaping, and explainable AI.
 
+![Regimeaware-RL-Portfolio-optimization](outputs/validation_dashboard.png)
+
 ## Overview
 
 This project implements a regime-aware reinforcement learning framework for portfolio optimisation. The framework combines:
